@@ -35,5 +35,6 @@ def update(frame):
     return point,
 
 ani = animation.FuncAnimation(fig, update, frames=200, interval=50)
+ani.save('my_orbit.gif', writer='pillow', fps=20)
 
 plt.show()
